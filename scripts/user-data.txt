@@ -1,0 +1,35 @@
+Pseudocode for nat instance bootstrap
+
+BEGIN user-data.sh
+
+// === SYSTEM CONFIGURATION ===
+UPDATE system packages
+INSTALL iptables-services
+
+// === NETWORK CONFIGURATION ===  
+ENABLE IP forwarding in kernel
+RELOAD kernel parameters
+
+// === NAT RULES SETUP ===
+FLUSH existing iptables rules
+ADD NAT rule: MASQUERADE all outbound traffic on eth0
+ALLOW packet forwarding between interfaces
+SAVE iptables rules across reboots
+
+// === AWS-SPECIFIC CONFIG ===
+GET instance metadata (instance-id, region)
+DISABLE source/destination check via AWS API
+
+// === MONITORING SETUP ===  
+INSTALL CloudWatch agent
+CONFIGURE metrics collection (CPU, memory, network, disk)
+START monitoring service
+
+// === HEALTH CHECK ===
+INSTALL web server
+CREATE health check endpoint at /health.html
+START web service
+
+LOG "NAT instance configuration completed"
+
+END user-data.sh
