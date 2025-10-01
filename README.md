@@ -14,7 +14,8 @@ scalability, resilience, and operational trade-offs.
 
 ## Solution Diagram
 
-![Solution Diagram](diagram.svg)  
+![Solution Diagram](diagram.svg)
+_Right click and Open Image In New Tab for better view_
 
 ## High Level Component Explanation
 - VPC: Isolated foundation for all resources. It houses subnets, route tables and security groups.
