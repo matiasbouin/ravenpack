@@ -113,8 +113,8 @@ _Right click and Open Image In New Tab for better view_
     - Cloudwatch Alarms + SNS
     - Fallback to manual route updates
 - Instance Performance Bottlenecks
-    - proactive scaling policies
-    - picking best size based on real metrics
+    - Proactive scaling policies
+    - Picking best size based on real metrics
 - Configuration Drift:
     - Regular infra drift detection
     - Automated pipeline for updates
