@@ -67,7 +67,7 @@ _Right click and Open Image In New Tab for better view_
 
 #### Cost-Effective Operation
 - Managed NAT: ~$32/month + $0.045/GB
-- Our Solution: ~$15/month (t3.micro) + minimal Lambda costs
+- NAT Instance Solution: ~$15/month (t3.micro) + minimal Lambda costs
 - Saving ~50% for steady-state traffic  
 
 #### Operation simplicity
@@ -90,7 +90,7 @@ _Right click and Open Image In New Tab for better view_
 - Mitigation:
     - Start with t3.medium
     - Scale to c5/c6 instances for higher throughput
-    - monitor network metrics for scaling triggers  
+    - Monitor network metrics for scaling triggers  
 
 #### Route Management Complexity
 - Challenge: Lambda must handle routing correctly
