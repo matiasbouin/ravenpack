@@ -53,7 +53,7 @@ _Right click and Open Image In New Tab for better view_
 - Managed NAT Gateway: Patching, Scaling and Failover is managed by AWS. Oprationally simple but more expensive. Offers less control over underlying infra and inspection.
 - NAT Instance Solution: We are responsible for managing patches and failover logic via user data and routing scripts. Adds operational overhead but more cost-effective service wise. Provides more control on underlying system.
 - Bandwtidth: A NAT Gateway can scale up to 100 Gbps while NAT Instance Solution is limited by the chosen instance type. We can scale horizontall by adding more instances to the ASG.
-- Example recommendation: If we are dealing with analytics environemnts with predictable but significant data processing workflows this NAT Instance Solution provides good balance of cost, control and resilience. Operational burden can be minimized through IAC and automation.
+- Example recommendation: If we are dealing with analytics environments with predictable but significant data processing workflows this NAT Instance Solution provides good balance of cost, control and resilience. Operational burden can be minimized through IAC and automation.
 
 ## Could this design realistically be implemented and operated?  
 
